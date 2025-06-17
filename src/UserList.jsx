@@ -22,7 +22,7 @@ const UserList = () => {
 
   const fetchUsers = async () => {
     try {
-      const res = await fetch('http://localhost:3300/users'); // your API route
+      const res = await fetch('https://book-server-production-aa37.up.railway.app/users'); // your API route
       const data = await res.json();
       setUsers(data);
     } catch (err) {

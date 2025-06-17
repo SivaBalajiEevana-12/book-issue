@@ -2,7 +2,7 @@
 
 export const createUser = async (userData) => {
   try {
-    const response = await fetch("http://localhost:3300/users", {
+    const response = await fetch("https://book-server-production-aa37.up.railway.app/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ export const createUser = async (userData) => {
 
 export const fetchBooks = async () => {
   try {
-    const response = await fetch("http://localhost:3300/books")
+    const response = await fetch("https://book-server-production-aa37.up.railway.app/books")
 
     if (!response.ok) {
       throw new Error("Failed to fetch books")
@@ -38,7 +38,7 @@ export const fetchBooks = async () => {
 
 export const createBooking = async (userId, books) => {
   try {
-    const response = await fetch("http://localhost:3300/book", {
+    const response = await fetch("https://book-server-production-aa37.up.railway.app/book", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

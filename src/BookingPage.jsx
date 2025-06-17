@@ -26,7 +26,7 @@ const BookingPage = () => {
 
   const fetchBookings = async () => {
     try {
-      const res = await fetch(`http://localhost:3300/booking?userId=${userId}`);
+      const res = await fetch(`https://book-server-production-aa37.up.railway.app/booking?userId=${userId}`);
       if (!res.ok) throw new Error("Failed to fetch bookings");
       const data = await res.json();
       setBookings(data);
