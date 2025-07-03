@@ -41,7 +41,7 @@ const ReturnBook = () => {
   const fetchBookings = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`https://book-server-production-aa37.up.railway.app/booking?userId=${userId}`);
+      const res = await fetch(`https://book-issue-server-110406681774.europe-west1.run.app/booking?userId=${userId}`);
       const data = await res.json();
 
       setBookings(data);
@@ -82,7 +82,7 @@ const ReturnBook = () => {
       });
 
       for (let update of updates) {
-        await fetch(`https://book-server-production-aa37.up.railway.app/booking/${update.bookingId}`, {
+        await fetch(`https://book-issue-server-110406681774.europe-west1.run.app/booking/${update.bookingId}`, {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(update)

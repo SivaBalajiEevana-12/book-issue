@@ -61,7 +61,7 @@ function Main() {
   const fetchBooks = async () => {
     try {
       setLoading(true)
-      const response = await fetch("https://book-server-production-aa37.up.railway.app/books")
+      const response = await fetch("https://book-issue-server-110406681774.europe-west1.run.app/books")
 
       if (!response.ok) {
         throw new Error("Failed to fetch books")
@@ -151,7 +151,7 @@ function Main() {
       setSubmitting(true)
 
       // First create/get user (you'll need to implement this endpoint)
-      const userResponse = await fetch("https://book-server-production-aa37.up.railway.app/users", {
+      const userResponse = await fetch("https://book-issue-server-110406681774.europe-west1.run.app/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -172,7 +172,7 @@ function Main() {
       }))
 
       // Submit booking
-      const bookingResponse = await fetch("https://book-server-production-aa37.up.railway.app/book", {
+      const bookingResponse = await fetch("https://book-issue-server-110406681774.europe-west1.run.app/book", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

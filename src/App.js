@@ -16,6 +16,7 @@ import UserList from './UserList';
 import BookingPage from './BookingPage';
 import ReturnBooks from './ReturnBook';
 import UserListR from './UserListR';
+import VerifyBookingPage from './VerifyBookingsPage';
 // import { Logo } from './Logo';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
     <Route path='/booking' element={<BookingPage/> }/>
     <Route path='/return' element={<ReturnBooks/> }/>
     <Route path='/return-page' element={<UserListR/> }/>
+    <Route path='/verify/:id' element={<VerifyBookingPage/>}/>
     
     </Routes>
     </ChakraProvider>
