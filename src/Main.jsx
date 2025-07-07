@@ -249,7 +249,7 @@ function Main() {
   }
 
   return (
-    <Layout>
+    // <Layout>
     <Container maxW="container.xl" py={8}>
       <Box borderWidth={1} borderRadius="lg" p={6} boxShadow="md" bg="white">
         <VStack spacing={6} align="stretch">
@@ -381,7 +381,7 @@ function Main() {
         </VStack>
       </Box>
     </Container>
-    </Layout>
+    // </Layout>
   )
 }
 
